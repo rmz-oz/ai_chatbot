@@ -1,0 +1,11 @@
+services:
+  web:
+    build: ./webapp
+    container_name: ai_chatbot_web
+    ports:
+      - "8010:8000"
+    env_file: .env
+    volumes:
+      - ./lightrag_storage:/app/lightrag_storage
+      - ./data:/app/data
+    restart: unless-stopped

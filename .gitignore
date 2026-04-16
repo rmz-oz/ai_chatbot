@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.env
+.env
+lightrag_storage/
+*.sqlite3
+.DS_Store
