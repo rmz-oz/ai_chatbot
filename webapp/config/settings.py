@@ -38,4 +38,6 @@ OLLAMA_URL  = config("OLLAMA_URL",  default="http://localhost:11434")
 LLM_MODEL   = config("LLM_MODEL",   default="gemma4:e4b")
 EMBED_MODEL = config("EMBED_MODEL", default="nomic-embed-text")
 
+GEMINI_API_KEY = config("GEMINI_API_KEY", default="")
+
 LIGHTRAG_STORAGE_DIR = str(BASE_DIR / "lightrag_storage")
